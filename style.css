@@ -61,6 +61,7 @@ nav img {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    border-bottom: 8px solid #222222;
 }
 
 .main-container {
@@ -156,11 +157,13 @@ form .btn {
     align-items: center;
     padding: 70px 70px 30px 70px;
     color: white;
+    border-bottom: 8px solid #222222;
+
 }
 
 .section1 .text h1 {
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 100px;
 }
 
@@ -173,6 +176,7 @@ form .btn {
 .text {
     /* margin-left: 50px; */
     margin-right: 50px;
+    margin-left: 50px;
 }
 
 .tv img {
@@ -190,6 +194,8 @@ form .btn {
     padding: 10px 70px 10px 70px;
     color: white;
     position: relative;
+    border-bottom: 8px solid #222222;
+
 }
 
 .section2 .text {
@@ -230,7 +236,7 @@ form .btn {
     display: flex;
     border: no;
     position: absolute;
-    top: 335px;
+    top: 280px;
     bottom: 21px;
     right: -78px;
     left: 165px;
@@ -267,6 +273,11 @@ form .btn {
 
 /* SECTION3 */
 
+.section3 {
+    border-bottom: 8px solid #222222;
+
+}
+
 
 .section3 .text {
     margin: 15px 0 5px 150px;
@@ -299,6 +310,8 @@ form .btn {
     align-items: center;
     padding: 70px 70px 30px 70px;
     color: white;
+    border-bottom: 8px solid #222222;
+
 }
 
 
@@ -331,11 +344,16 @@ form .btn {
 
 /* FAQ */
 
+.questions {
+    border-bottom: 8px solid #222222;
+
+}
+
 .faq {
-    display: block;
     width: 60%;
     margin: auto;
     margin-top: 60px;
+
 }
 
 /* FAQ Heading */
@@ -367,7 +385,7 @@ form .btn {
 .box .plus {
     height: 30px;
     width: 30px;
-
+    margin-top: 8px;
 }
 
 .box a {
@@ -381,6 +399,7 @@ form .btn {
 .faq form {
     margin: auto;
     margin-top: 70px;
+    margin-bottom: 80px;
 
 }
 
@@ -431,8 +450,8 @@ form .btn {
 }
 
 .border {
-    border-bottom: 8px solid #222222;
-    margin-top: 70px;
+    border: 5px solid #222222;
+    /* margin-top: 70px; */
 }
 
 /* footer */
