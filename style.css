@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: black;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70px;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin: 20px 56px;
+
+}
+
+/* logo */
+
+nav img {
+    height: 38px;
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(40%, -50%);
+    margin-top: 5px;
+}
+
+/* Nav button */
+
+.navbar .navbtn {
+    height: 35px;
+    width: 100px;
+    padding: 7px 17px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.main-section {
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0, .7)), url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.main-container {
+    display: block;
+    height: 310;
+    padding: 150px 0;
+    color: #fff;
+    text-align: center;
+    margin: 0px 155px;
+}
+
+.main-container h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 55px;
+    margin: 0 155px;
+    padding: 75px 75px 0 75px;
+}
+
+.main-container h2 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 50px;
+}
+
+
+.main-container form h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.main-section form {
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: ;
+}
+
+.main-section form h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* FORM email and Button */
+
+form .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section form .email {
+    height: 60px;
+    width: 450px;
+    font-size: 18px;
+    border: 1px solid #8c8c8c;
+    padding: 5px 10px 0 10px;
+}
+
+.main-section form input:focus {
+    border: 1px solid dodgerblue;
+}
+
+.arrow {
+    height: 30px;
+    width: 30px;
+}
+
+.main-container button {
+    display: flex;
+    height: 67px;
+    width: 206px;
+    background-color: #f40612;
+    font-size: 20px;
+    border: 1px solid #333333;
+    color: white;
+    padding: 20px 26px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+
+/* SECTION1  */
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 70px 30px 70px;
+    color: white;
+}
+
+.section1 .text h1 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 100px;
+}
+
+.section1 .text h2 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.tv,
+.text {
+    /* margin-left: 50px; */
+    margin-right: 50px;
+}
+
+.tv img {
+    height: 350px;
+    width: 505px;
+}
+
+
+/* SECTION2 */
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 70px 10px 70px;
+    color: white;
+    position: relative;
+}
+
+.section2 .text {
+    margin-left: 30px;
+}
+
+.section2 .text h1 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-bottom: 10px;
+    /* margin-left: 20px; */
+}
+
+.section2 .text h2 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.strangerthings,
+.text {
+    /* margin-left: 50px; */
+    margin-right: 50px;
+}
+
+.strangerthings img {
+    height: 380px;
+    width: 520px;
+}
+
+.downloading {
+    height: 76px;
+    width: 300px;
+    padding: 8px 12px;
+    border: 2px solid #292828;
+    border-radius: 12px;
+    background-color: black;
+    display: flex;
+    border: no;
+    position: absolute;
+    top: 335px;
+    bottom: 21px;
+    right: -78px;
+    left: 165px;
+    font-size: 14px;
+}
+
+.downloading h3 {
+    margin-top: 13px;
+}
+
+.strangerthings .boxshot {
+    height: 72px;
+    width: 52px;
+    margin-right: 25px;
+}
+
+.strangerthings .downloadicon {
+    height: 50px;
+    width: 48px;
+    margin-left: 50px;
+    margin-top: 12px;
+}
+
+.downloading span {
+    color: dodgerblue;
+}
+
+
+
+
+
+
+
+
+/* SECTION3 */
+
+
+.section3 .text {
+    margin: 15px 0 5px 150px;
+    /* padding: 0 48px; */
+    width: 40%;
+}
+
+.section3 h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 100px;
+    color: white;
+}
+
+.section3 h2 {
+    font-size: 27px;
+    font-weight: 400;
+    color: white;
+}
+
+
+
+
+
+
+/* SECTION4 KIDS */
+.section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 70px 30px 70px;
+    color: white;
+}
+
+
+
+.section4 .text h1 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 100px;
+}
+
+.section4 .text h2 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.kids,
+.text {
+    /* margin-left: 50px; */
+    margin-right: 50px;
+}
+
+.kids img {
+    height: 350px;
+    width: 505px;
+}
+
+
+
+
+
+/* FAQ */
+
+.faq {
+    display: block;
+    width: 60%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+/* FAQ Heading */
+
+.faq h1 {
+    color: white;
+    padding-bottom: 40px;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #303030;
+    height: 50px;
+    width: 700px;
+    padding: 12px 57px 10px 31px;
+    color: white;
+}
+
+.box p {
+    font-size: 28px;
+}
+
+.box .plus {
+    height: 30px;
+    width: 30px;
+
+}
+
+.box a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* FAQ FORM */
+
+.faq form {
+    margin: auto;
+    margin-top: 70px;
+
+}
+
+.faq form h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* FORM email and Button */
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq form .email {
+    height: 60px;
+    width: 450px;
+    font-size: 18px;
+    border: 1px solid #8c8c8c;
+    padding: 5px 10px 0 10px;
+}
+
+.faq form input:focus {
+    border: 1px solid dodgerblue;
+}
+
+.arrow {
+    height: 30px;
+    width: 30px;
+}
+
+.btn .faq-btn {
+    display: flex;
+    height: 67px;
+    width: 206px;
+    background-color: #f40612;
+    font-size: 20px;
+    border: 1px solid #333333;
+    color: white;
+    padding: 20px 26px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.border {
+    border-bottom: 8px solid #222222;
+    margin-top: 70px;
+}
+
+/* footer */
+
+.footer {
+    margin: 0 170px;
+    color: #737373;
+    padding: 70px 45px 0 45px;
+}
+
+.footer p {
+    margin-bottom: 30px;
+}
+
+.footer ul {
+    display: flex;
+
+}
+
+.footer ul li {
+    list-style: none;
+    line-height: 35px;
+    margin-right: 100px;
+    color: #737373;
+    font-size: 13px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #737373;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.footer p:last-child {
+    margin-top: 30px;
+}
