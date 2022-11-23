@@ -7,11 +7,72 @@
 body {
     background-color: black;
     font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
-    overflow-x: auto;
+    overflow-x: hidden;
     box-sizing: border-box;
 }
 
+/* General */
 
+h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+}
+
+.arrow {
+    height: 30px;
+    width: 30px;
+}
+
+form h3 {
+    color: white;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    box-sizing: border-box;
+    height: 60px;
+    width: 450px;
+    border: 1px solid #8c8c8c;
+    padding: 5px 10px;
+}
+
+::placeholder {
+    font-size: 18px;
+}
+
+form button {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    width: 206px;
+    background-color: #f40612;
+    font-size: 20px;
+    border: none;
+    color: white;
+    padding: 30px 26px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+form input:focus {
+    border: 1px solid dodgerblue;
+    outline: none;
+}
+
+
+/* Navbar */
 
 nav {
     position: absolute;
@@ -28,7 +89,7 @@ nav {
 
 }
 
-/* logo */
+/* nav logo */
 
 nav img {
     height: 38px;
@@ -73,8 +134,6 @@ nav img {
 }
 
 .content h1 {
-    font-size: 50px;
-    font-weight: 600;
     line-height: 55px;
     margin: 0 155px;
     padding: 75px 75px 0 75px;
@@ -88,70 +147,12 @@ nav img {
 
 }
 
-/* Nav Form */
+/* Main Form */
 
 .content form {
-    /* margin: auto; */
     margin-top: 25px;
 }
 
-.content form h3 {
-    font-size: 21px;
-    font-weight: normal;
-    /* text-align: center; */
-    margin-bottom: 20px;
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.content form input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content form .email {
-    height: 50px;
-    width: 450px;
-    border: 1px solid #8c8c8c;
-    padding: 5px 10px 5px 10px;
-}
-
-.content form input:focus {
-    border: 1px solid dodgerblue;
-    outline: none;
-}
-
-::placeholder {
-    font-size: 18px;
-}
-
-.btn span {
-    padding-left: 30px;
-    padding-top: 3px;
-    font-size: 30px;
-}
-
-button {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    height: 52px;
-    width: 206px;
-    background-color: #f40612;
-    font-size: 20px;
-    border: none;
-    color: white;
-    padding: 30px 26px;
-    justify-content: space-between;
-    cursor: pointer;
-}
-
-.arrow {
-    height: 30px;
-    width: 30px;
-}
 
 /* SECTION1  */
 
@@ -166,8 +167,7 @@ button {
 }
 
 .section1 .text h1 {
-    font-size: 50px;
-    font-weight: 700;
+    line-height: 60px;
     margin-bottom: 10px;
 }
 
@@ -176,22 +176,20 @@ button {
     font-weight: 400;
 }
 
-.tv,
+.tv-content,
 .text {
-    /* margin-left: 50px; */
     margin-right: 50px;
     margin-left: 50px;
 }
 
-.tv {
+.tv-content {
     position: relative;
 }
 
-.tv img {
+.tv-content img {
     height: 400px;
     width: 570px;
 }
-
 
 video {
     position: absolute;
@@ -208,11 +206,10 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 70px 40px 70px;
+    padding: 10px 70px 40px;
     color: white;
     position: relative;
     border-bottom: 8px solid #222222;
-
 }
 
 .section2 .text {
@@ -220,11 +217,8 @@ video {
 }
 
 .section2 .text h1 {
-    font-size: 50px;
-    font-weight: 500;
     line-height: 50px;
     margin-bottom: 10px;
-    /* margin-left: 20px; */
 }
 
 .section2 .text h2 {
@@ -239,33 +233,41 @@ video {
 }
 
 .strangerthings img {
-    height: 380px;
+    height: 370px;
     width: 520px;
 }
 
 .downloading {
-    height: 76px;
+    display: flex;
+    height: 65px;
     width: 300px;
     padding: 8px 12px;
     border: 2px solid #292828;
     border-radius: 12px;
     background-color: black;
-    display: flex;
-    border: no;
     position: absolute;
     top: 280px;
-    bottom: 21px;
-    right: -78px;
+    bottom: 25px;
     left: 165px;
+}
+
+.download-text {
+    margin-right: 10px;
     font-size: 14px;
 }
 
-.downloading h3 {
+.download-text p {
     margin-top: 13px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.download-text span {
+    color: dodgerblue;
 }
 
 .strangerthings .boxshot {
-    height: 72px;
+    height: 65px;
     width: 52px;
     margin-right: 25px;
 }
@@ -277,9 +279,6 @@ video {
     margin-top: 12px;
 }
 
-.downloading span {
-    color: dodgerblue;
-}
 
 /* SECTION3 */
 
@@ -291,15 +290,11 @@ video {
 
 .section3 .text {
     margin: 15px 0 5px 150px;
-    /* padding: 0 48px; */
     width: 40%;
 }
 
 .section3 h1 {
-    font-size: 50px;
-    font-weight: 700;
     line-height: 100px;
-    color: white;
 }
 
 .section3 h2 {
@@ -309,11 +304,9 @@ video {
 }
 
 
-
-
-
-
 /* SECTION4 KIDS */
+
+
 .section4 {
     display: flex;
     justify-content: center;
@@ -321,14 +314,9 @@ video {
     padding: 70px 70px 30px 70px;
     color: white;
     border-bottom: 8px solid #222222;
-
 }
 
-
-
 .section4 .text h1 {
-    font-size: 50px;
-    font-weight: 500;
     line-height: 100px;
 }
 
@@ -339,7 +327,6 @@ video {
 
 .kids,
 .text {
-    /* margin-left: 50px; */
     margin-right: 50px;
 }
 
@@ -349,12 +336,72 @@ video {
 }
 
 
-
-
-
 /* FAQ */
 
+
+.faq {
+    padding: 70px 30px;
+}
+
+.faq h1 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
 .questions {
+    /* height: 50px; */
+    width: 750px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+.question {
+    position: relative;
+    background-color: #303030;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.question span {
+    font-size: 60px;
+    font-weight: lighter;
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    /* transition: all 0.2s ease; */
+}
+
+.question .header {
+    display: block;
+    padding: 20px 30px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.question .answer {
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.question input[type="checkbox"] {
+    display: none;
+}
+
+.question input[type="checkbox"]:checked~.answer {
+    padding: 30px 30px;
+    max-height: 600px;
+}
+
+.question input[type="checkbox"]:checked~.header span {
+    transform: rotate(45deg);
+}
+
+
+
+
+/* .questions {
     border-bottom: 8px solid #222222;
 
 }
@@ -363,15 +410,11 @@ video {
     width: 60%;
     margin: auto;
     margin-top: 60px;
-
 }
 
 
 .faq h1 {
-    color: white;
-    padding-bottom: 40px;
-    font-size: 50px;
-    font-weight: 600;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -383,7 +426,7 @@ video {
     background-color: #303030;
     height: 50px;
     width: 700px;
-    padding: 12px 57px 10px 31px;
+    padding: 9px 50px 9px 31px;
     color: white;
 }
 
@@ -392,9 +435,6 @@ video {
 }
 
 .box span {
-
-    padding-left: 30px;
-    padding-top: 3px;
     font-size: 30px;
 }
 
@@ -402,66 +442,23 @@ video {
     color: white;
     text-decoration: none;
     cursor: pointer;
-}
+} */
+
 
 /* FAQ form email and Button*/
 
 .faq form {
-    margin: auto;
     margin-top: 70px;
     margin-bottom: 80px;
-
 }
 
 .faq form h3 {
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
     text-align: center;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.faq form .email {
-    height: 50px;
-    width: 450px;
-    border: 1px solid #8c8c8c;
-    padding: 5px 10px 5px 10px;
-}
-
-.faq form input:focus {
-    border: 1px solid dodgerblue;
-    outline: none;
 }
 
 
-.btn .faq-btn {
-    align-items: center;
-    text-align: center;
-    height: 52px;
-    width: 206px;
-    background-color: #f40612;
-    font-size: 20px;
-    border: none;
-    color: white;
-    padding: 30px 26px;
-    justify-content: space-between;
-    cursor: pointer;
+/* Footer */
 
-}
-
-
-.border {
-    border: 5px solid #222222;
-    /* margin-top: 70px; */
-}
-
-/* footer */
 
 .footer {
     margin: 0 170px;
@@ -475,7 +472,6 @@ video {
 
 .footer ul {
     display: flex;
-
 }
 
 .footer ul li {
