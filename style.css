@@ -148,7 +148,10 @@ button {
     cursor: pointer;
 }
 
-
+.arrow {
+    height: 30px;
+    width: 30px;
+}
 
 /* SECTION1  */
 
@@ -451,6 +454,7 @@ video {
     cursor: pointer;
 
 }
+
 
 .border {
     border: 5px solid #222222;
