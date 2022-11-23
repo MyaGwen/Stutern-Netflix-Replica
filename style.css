@@ -198,6 +198,8 @@ video {
     top: 84px;
     left: 75px;
     z-index: -1;
+    height: 240px;
+    width: 430px;
 }
 
 
