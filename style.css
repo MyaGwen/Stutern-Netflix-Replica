@@ -6,8 +6,8 @@
 
 body {
     background-color: black;
-    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
-    overflow-x: hidden;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    overflow-x: auto;
     box-sizing: border-box;
 }
 
@@ -18,7 +18,6 @@ nav {
     top: 0;
     width: 100%;
     height: 70px;
-
 }
 
 .navbar {
@@ -44,28 +43,28 @@ nav img {
 /* Nav button */
 
 .navbar .navbtn {
+    background-color: #e50914;
+    color: #fff;
     height: 35px;
     width: 100px;
     padding: 7px 17px;
-    background-color: #e50914;
-    color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 
-.main-section {
+.main-background {
     width: 100vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0, .7)), url(background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 0, 0, .8)), url(background.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
     border-bottom: 8px solid #222222;
 }
 
-.main-container {
-    display: block;
+.content {
     height: 310;
     padding: 150px 0;
     color: #fff;
@@ -73,7 +72,7 @@ nav img {
     margin: 0px 155px;
 }
 
-.main-container h1 {
+.content h1 {
     font-size: 50px;
     font-weight: 600;
     line-height: 55px;
@@ -81,68 +80,70 @@ nav img {
     padding: 75px 75px 0 75px;
 }
 
-.main-container h2 {
+.content h2 {
     font-size: 26px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    line-height: 50px;
+    font-weight: normal;
+    margin-top: 13px;
+    margin-bottom: 29px;
+
 }
 
+/* Nav Form */
 
-.main-container form h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.main-section form {
-    margin: auto;
+.content form {
+    /* margin: auto; */
     margin-top: 25px;
-    margin-bottom: ;
 }
 
-.main-section form h2 {
+.content form h3 {
+    font-size: 21px;
+    font-weight: normal;
+    /* text-align: center; */
+    margin-bottom: 20px;
     color: white;
     font-size: 20px;
     font-weight: 400;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
-/* FORM email and Button */
-
-form .btn {
+.content form input {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main-section form .email {
-    height: 60px;
+.content form .email {
+    height: 50px;
     width: 450px;
-    font-size: 18px;
     border: 1px solid #8c8c8c;
-    padding: 5px 10px 0 10px;
+    padding: 5px 10px 5px 10px;
 }
 
-.main-section form input:focus {
+.content form input:focus {
     border: 1px solid dodgerblue;
+    outline: none;
 }
 
-.arrow {
-    height: 30px;
-    width: 30px;
+::placeholder {
+    font-size: 18px;
 }
 
-.main-container button {
+.btn span {
+    padding-left: 30px;
+    padding-top: 3px;
+    font-size: 30px;
+}
+
+button {
     display: flex;
-    height: 67px;
+    align-items: center;
+    text-align: center;
+    height: 52px;
     width: 206px;
     background-color: #f40612;
     font-size: 20px;
-    border: 1px solid #333333;
+    border: none;
     color: white;
-    padding: 20px 26px;
+    padding: 30px 26px;
     justify-content: space-between;
     cursor: pointer;
 }
@@ -155,7 +156,7 @@ form .btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 70px 70px 30px 70px;
+    padding: 10px 40px 30px;
     color: white;
     border-bottom: 8px solid #222222;
 
@@ -164,11 +165,11 @@ form .btn {
 .section1 .text h1 {
     font-size: 50px;
     font-weight: 700;
-    line-height: 100px;
+    margin-bottom: 10px;
 }
 
 .section1 .text h2 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 400;
 }
 
@@ -179,10 +180,23 @@ form .btn {
     margin-left: 50px;
 }
 
-.tv img {
-    height: 350px;
-    width: 505px;
+.tv {
+    position: relative;
 }
+
+.tv img {
+    height: 400px;
+    width: 570px;
+}
+
+
+video {
+    position: absolute;
+    top: 84px;
+    left: 75px;
+    z-index: -1;
+}
+
 
 
 /* SECTION2 */
@@ -191,7 +205,7 @@ form .btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 70px 10px 70px;
+    padding: 10px 70px 40px 70px;
     color: white;
     position: relative;
     border-bottom: 8px solid #222222;
@@ -264,18 +278,11 @@ form .btn {
     color: dodgerblue;
 }
 
-
-
-
-
-
-
-
 /* SECTION3 */
 
 .section3 {
     border-bottom: 8px solid #222222;
-
+    padding-bottom: 40px;
 }
 
 
@@ -356,7 +363,6 @@ form .btn {
 
 }
 
-/* FAQ Heading */
 
 .faq h1 {
     color: white;
@@ -366,9 +372,9 @@ form .btn {
     text-align: center;
 }
 
-
 .box {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
     background-color: #303030;
@@ -379,13 +385,14 @@ form .btn {
 }
 
 .box p {
-    font-size: 28px;
+    font-size: 25px;
 }
 
-.box .plus {
-    height: 30px;
-    width: 30px;
-    margin-top: 8px;
+.box span {
+
+    padding-left: 30px;
+    padding-top: 3px;
+    font-size: 30px;
 }
 
 .box a {
@@ -394,7 +401,7 @@ form .btn {
     cursor: pointer;
 }
 
-/* FAQ FORM */
+/* FAQ form email and Button*/
 
 .faq form {
     margin: auto;
@@ -403,15 +410,13 @@ form .btn {
 
 }
 
-.faq form h2 {
+.faq form h3 {
     color: white;
     font-size: 20px;
     font-weight: 400;
     text-align: center;
     margin-bottom: 20px;
 }
-
-/* FORM email and Button */
 
 .btn {
     display: flex;
@@ -420,33 +425,31 @@ form .btn {
 }
 
 .faq form .email {
-    height: 60px;
+    height: 50px;
     width: 450px;
-    font-size: 18px;
     border: 1px solid #8c8c8c;
-    padding: 5px 10px 0 10px;
+    padding: 5px 10px 5px 10px;
 }
 
 .faq form input:focus {
     border: 1px solid dodgerblue;
+    outline: none;
 }
 
-.arrow {
-    height: 30px;
-    width: 30px;
-}
 
 .btn .faq-btn {
-    display: flex;
-    height: 67px;
+    align-items: center;
+    text-align: center;
+    height: 52px;
     width: 206px;
     background-color: #f40612;
     font-size: 20px;
-    border: 1px solid #333333;
+    border: none;
     color: white;
-    padding: 20px 26px;
+    padding: 30px 26px;
     justify-content: space-between;
     cursor: pointer;
+
 }
 
 .border {
