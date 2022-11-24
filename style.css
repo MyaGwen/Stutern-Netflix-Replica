@@ -120,6 +120,7 @@ nav img {
     right: 40px;
 }
 
+
 /* Main Background section */
 
 
@@ -405,6 +406,7 @@ video {
 
 .footer p {
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .footer ul {
@@ -426,7 +428,8 @@ video {
     cursor: pointer;
 }
 
-a:focus {
+.footer ul li a:hover,
+.footer p:not(.footer p:last-child):hover {
     text-decoration: underline;
 }
 
