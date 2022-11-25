@@ -126,7 +126,7 @@ nav img {
 
 .main-background {
     width: 100vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 0, 0, .8)), url(background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0, .8)), url(background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position: center; */
